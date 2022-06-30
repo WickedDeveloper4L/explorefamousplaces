@@ -1,0 +1,84 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+    user-select: none;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img.background{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    background-repeat: no-repeat;
+    -webkit-filter: blur(4px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+}
+.container{
+  font-weight: bold;
+  width: 80%;
+
+  position: relative;
+  align-items: center;
+  z-index: 2;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container img.picture{
+    width: 600px;
+    height: 337.50px;
+    border: 2px solid #f1f1f1;
+    border-radius: 5px;
+}
+h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+}
+
+button{
+    padding: 5px 30px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod; 
+    cursor: pointer;
+}
+
+ button:hover{
+    outline: none !important;
+    transition: 0.5s;
+    box-shadow: 3px 5px black;
+}
+
+@media (max-width: 768px){
+    .container img.picture{
+        width: 300px;
+        height: 170.50px;
+    }
+    h2{
+        font-weight: 300;
+        font-size: 1rem;
+        max-width: 300px;
+    }
+}
