@@ -63,12 +63,14 @@ button{
     border-radius: 5px;
     background-color: goldenrod; 
     cursor: pointer;
+    outline: none !important;
 }
 
  button:hover{
     outline: none !important;
     transition: 0.5s;
     box-shadow: 3px 5px black;
+    background-color: rgb(17, 149, 200);
 }
 
 @media (max-width: 768px){
